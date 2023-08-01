@@ -7,17 +7,20 @@ import Filter from "./components/Filter/Filter";
 import Sort from "./components/Sort/Sort";
 import LoadMore from "./components/LoadMore/LoadMore";
 import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ProductCounter />
-      <Filter />
-      <Sort />
-      <ProductGrid />
-      <ProductTile />
-      <LoadMore />
+      <div className="content">
+        <ProductCounter />
+        <Filter />
+        <Sort />
+        <ProductGrid />
+        <ProductTile />
+        <LoadMore />
+      </div>
       <Footer />
     </div>
   );
