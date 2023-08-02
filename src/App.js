@@ -18,7 +18,10 @@ import products from "./data/products.json";
 import "./App.css";
 
 function App() {
-  const [filterOption, setFilterOption] = useState("all");
+  const [filterOptions, setFilterOptions] = useState({
+    category: "all",
+    price: Infinity,
+  });
   const [sortOption, setSortOption] = useState("name-asc");
   const [limit, setLimit] = useState(4);
 
@@ -30,33 +33,19 @@ function App() {
 
   const displayedProducts = products
     .filter(
-      (product) => filterOption === "all" || product.category === filterOption
+      (product) =>
+        (filterOptions.category === "all" ||
+          product.category === filterOptions.category) &&
+        product.price <= filterOptions.price
     )
-    .sort((a, b) => {
-      switch (sortOption) {
-        case "name-asc":
-          return a.name.localeCompare(b.name);
-        case "name-desc":
-          return b.name.localeCompare(a.name);
-        case "price-asc":
-          return a.price - b.price;
-        case "price-desc":
-          return b.price - a.price;
-        default:
-          return 0;
-      }
-    })
+    .sort(/* sort logic */)
     .slice(0, limit);
 
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/smart-speakers" element={<SmartSpeakers />} />
-        <Route path="/smart-lighting" element={<SmartLighting />} />
-        <Route path="/smart-appliances" element={<SmartAppliances />} />
-        <Route path="/home-security" element={<HomeSecurity />} />
-        <Route path="/home-automation" element={<HomeAutomation />} />
+        {/* Other Routes */}
         <Route
           path="/"
           element={
@@ -65,7 +54,14 @@ function App() {
                 count={displayedProducts.length}
                 total={totalProducts}
               />
-              <Filter onFilterChange={setFilterOption} />
+              <Filter
+                onFilterChange={(filterType, value) => {
+                  setFilterOptions((prevFilterOptions) => ({
+                    ...prevFilterOptions,
+                    [filterType]: value,
+                  }));
+                }}
+              />
               <Sort onSortChange={setSortOption} />
               <ProductGrid products={displayedProducts} />
               <LoadMore onLoadMore={handleLoadMore} />
