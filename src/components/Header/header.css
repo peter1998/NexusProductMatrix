@@ -1,13 +1,20 @@
+/* src/components/Header/Header.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .navbar {
-  background-color: rgb(238, 236, 237);
+  background-color: #202020;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 16px;
 }
 
 .nav-link {
   margin-right: 15px;
-  color: #333;
+  color: #bfbfbf;
+  font-size: 18px;
 }
 
 .nav-link:hover {
@@ -15,8 +22,45 @@
 }
 
 .navbar-brand img {
-  height: 100px;
-
+  height: 80px;
   object-fit: contain;
   margin-right: 25px;
+}
+
+/* Add responsive rules */
+@media (max-width: 1199px) {
+  .navbar-brand img {
+    height: 70px;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand img {
+    height: 60px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    height: 50px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+  .nav-link {
+    font-size: 11px;
+    margin-right: 8px;
+  }
 }

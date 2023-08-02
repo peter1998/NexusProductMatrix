@@ -12,10 +12,10 @@ import products from "./data/products.json";
 function App() {
   const [filterOption, setFilterOption] = useState("all");
   const [sortOption, setSortOption] = useState("name-asc");
-  const [limit, setLimit] = useState(8);
+  const [limit, setLimit] = useState(4);
 
   const handleLoadMore = () => {
-    setLimit(limit + 8);
+    setLimit(limit + 4);
   };
 
   const totalProducts = products.length;
