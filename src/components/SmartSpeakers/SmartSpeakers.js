@@ -1,7 +1,4 @@
-// src/components/SmartSpeakers/SmartSpeakers.js
-
 import React from "react";
-//import "./SmartSpeakers.css";
 
 function SmartSpeakers() {
   return (

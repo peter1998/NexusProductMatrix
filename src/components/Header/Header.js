@@ -2,20 +2,21 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import { FaArrowRight } from "react-icons/fa";
 import "./header.css";
 
 const Header = () => {
   return (
     <Navbar variant="light" expand="lg" sticky="top" className="navbar">
-      <Container>
-        <Link to="/">
-          {" "}
-          {/* Replace Navbar.Brand with Link */}
+      <Container fluid>
+        <Link to="/" className="navbar-brand" title="Go to homepage">
+          <span className="home-text">Home</span>
+          <FaArrowRight className="home-arrow" />
           <img src={logo} alt="Logo" />
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav>
             <Nav.Item>
               <Link className="nav-link" to="/smart-speakers">
                 Smart Speakers

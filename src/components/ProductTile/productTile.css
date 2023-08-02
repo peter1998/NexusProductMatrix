@@ -1,5 +1,5 @@
 .product-tile {
   border: 1px solid #ddd;
   padding: 20px;
-  flex: 1 0 200px; /* flex-grow, flex-shrink, flex-basis */
+  flex: 1 0 200px;
 }

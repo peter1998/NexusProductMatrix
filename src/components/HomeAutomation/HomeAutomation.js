@@ -1,5 +1,4 @@
 import React from "react";
-//import "./SmartLighting.css";
 
 function HomeAutomation() {
   return (

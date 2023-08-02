@@ -1,7 +1,4 @@
-// src/components/SmartLighting/SmartLighting.js
-
 import React from "react";
-//import "./SmartLighting.css";
 
 function SmartLighting() {
   return (
