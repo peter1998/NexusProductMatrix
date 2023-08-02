@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./header.css";
 
@@ -7,17 +8,39 @@ const Header = () => {
   return (
     <Navbar variant="light" expand="lg" sticky="top" className="navbar">
       <Container>
-        <Navbar.Brand href="#home">
+        <Link to="/">
+          {" "}
+          {/* Replace Navbar.Brand with Link */}
           <img src={logo} alt="Logo" />
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Smart Speakers</Nav.Link>
-            <Nav.Link href="#link">Smart Lighting</Nav.Link>
-            <Nav.Link href="#link">Smart Appliances</Nav.Link>
-            <Nav.Link href="#link">Home Security</Nav.Link>
-            <Nav.Link href="#link">Home Automation</Nav.Link>
+            <Nav.Item>
+              <Link className="nav-link" to="/smart-speakers">
+                Smart Speakers
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link" to="/smart-lighting">
+                Smart Lighting
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link" to="/smart-appliances">
+                Smart Appliances
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link" to="/home-security">
+                Home Security
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link" to="/home-automation">
+                Home Automation
+              </Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

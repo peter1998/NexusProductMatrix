@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import ProductCounter from "./components/ProductCounter/ProductCounter";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
@@ -6,8 +7,15 @@ import Filter from "./components/Filter/Filter";
 import Sort from "./components/Sort/Sort";
 import LoadMore from "./components/LoadMore/LoadMore";
 import Footer from "./components/Footer/Footer";
-import "./App.css";
+import SmartSpeakers from "./components/SmartSpeakers/SmartSpeakers";
+import SmartLighting from "./components/SmartLighting/SmartLighting";
+import SmartAppliances from "./components/SmartAppliances/SmartAppliances";
+import HomeSecurity from "./components/HomeSecurity/HomeSecurity";
+import HomeAutomation from "./components/HomeAutomation/HomeAutomation";
+
 import products from "./data/products.json";
+
+import "./App.css";
 
 function App() {
   const [filterOption, setFilterOption] = useState("all");
@@ -43,16 +51,28 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="content">
-        <ProductCounter
-          count={displayedProducts.length}
-          total={totalProducts}
+      <Routes>
+        <Route path="/smart-speakers" element={<SmartSpeakers />} />
+        <Route path="/smart-lighting" element={<SmartLighting />} />
+        <Route path="/smart-appliances" element={<SmartAppliances />} />
+        <Route path="/home-security" element={<HomeSecurity />} />
+        <Route path="/home-automation" element={<HomeAutomation />} />
+        <Route
+          path="/"
+          element={
+            <div className="content">
+              <ProductCounter
+                count={displayedProducts.length}
+                total={totalProducts}
+              />
+              <Filter onFilterChange={setFilterOption} />
+              <Sort onSortChange={setSortOption} />
+              <ProductGrid products={displayedProducts} />
+              <LoadMore onLoadMore={handleLoadMore} />
+            </div>
+          }
         />
-        <Filter onFilterChange={setFilterOption} />
-        <Sort onSortChange={setSortOption} />
-        <ProductGrid products={displayedProducts} />
-        <LoadMore onLoadMore={handleLoadMore} />
-      </div>
+      </Routes>
       <Footer />
     </div>
   );

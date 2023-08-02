@@ -5,13 +5,7 @@ import "./loadMore.css";
 function LoadMore({ onLoadMore }) {
   return (
     <div className="load-more">
-      <Button
-        className="btn"
-        variant="primary"
-        size="lg"
-        block
-        onClick={onLoadMore}
-      >
+      <Button className="btn" variant="primary" size="lg" onClick={onLoadMore}>
         Load More
       </Button>
     </div>
