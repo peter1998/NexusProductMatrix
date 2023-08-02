@@ -5,7 +5,8 @@
     "category": "Smart Speakers",
     "price": 49.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "A top-of-the-line smart speaker with exceptional sound quality."
+    "description": "A top-of-the-line smart speaker with exceptional sound quality.",
+    "rating": 2.5
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "category": "Smart Lighting",
     "price": 29.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Light up your home with this energy-efficient smart bulb."
+    "description": "Light up your home with this energy-efficient smart bulb.",
+    "rating": 1.5
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "category": "Smart Appliances",
     "price": 999.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "A fridge that knows your eating habits and restocks itself."
+    "description": "A fridge that knows your eating habits and restocks itself.",
+    "rating": 4.8
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "category": "Home Security",
     "price": 199.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "A secure and easy-to-use smart lock for your home."
+    "description": "A secure and easy-to-use smart lock for your home.",
+    "rating": 3.9
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "category": "Home Automation",
     "price": 249.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Regulate your home's temperature with this smart thermostat."
+    "description": "Regulate your home's temperature with this smart thermostat.",
+    "rating": 4.1
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "category": "Smart Appliances",
     "price": 899.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Experience the best of entertainment with this smart TV."
+    "description": "Experience the best of entertainment with this smart TV.",
+    "rating": 4.5
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "category": "Home Automation",
     "price": 349.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Keep your home clean with this self-operating smart vacuum cleaner."
+    "description": "Keep your home clean with this self-operating smart vacuum cleaner.",
+    "rating": 4.3
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "category": "Home Security",
     "price": 199.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Secure your home with this smart doorbell featuring live video streaming."
+    "description": "Secure your home with this smart doorbell featuring live video streaming.",
+    "rating": 3.8
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "category": "Smart Lighting",
     "price": 59.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Control your home lighting with a simple voice command using this smart switch."
+    "description": "Control your home lighting with a simple voice command using this smart switch.",
+    "rating": 2.3
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "category": "Smart Speakers",
     "price": 79.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Your personal assistant to control all smart devices with voice commands."
+    "description": "Your personal assistant to control all smart devices with voice commands.",
+    "rating": 2.4
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "category": "Home Security",
     "price": 199.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Keep an eye on your home with this smart security camera."
+    "description": "Keep an eye on your home with this smart security camera.",
+    "rating": 3.5
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "category": "Home Automation",
     "price": 29.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Control your appliances with this smart plug."
+    "description": "Control your appliances with this smart plug.",
+    "rating": 2.2
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "category": "Smart Appliances",
     "price": 199.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Control the light in your home with these smart blinds."
+    "description": "Control the light in your home with these smart blinds.",
+    "rating": 4.0
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "category": "Smart Lighting",
     "price": 59.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Decorate your home with this colorful smart light strip."
+    "description": "Decorate your home with this colorful smart light strip.",
+    "rating": 2.2
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "category": "Smart Speakers",
     "price": 99.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Control all your smart devices from one place with this smart hub."
+    "description": "Control all your smart devices from one place with this smart hub.",
+    "rating": 2.7
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "category": "Home Security",
     "price": 299.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Secure your home with this comprehensive smart alarm system."
+    "description": "Secure your home with this comprehensive smart alarm system.",
+    "rating": 4.3
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "category": "Smart Appliances",
     "price": 199.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Purify the air in your home with this smart air purifier."
+    "description": "Purify the air in your home with this smart air purifier.",
+    "rating": 3.8
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "category": "Smart Lighting",
     "price": 69.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Adjust your home lighting with this smart dimmer switch."
+    "description": "Adjust your home lighting with this smart dimmer switch.",
+    "rating": 2.5
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "category": "Smart Speakers",
     "price": 799.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Enjoy movies and music with this smart home theater system."
+    "description": "Enjoy movies and music with this smart home theater system.",
+    "rating": 4.8
   },
   {
     "id": 20,
@@ -157,6 +176,7 @@
     "category": "Home Automation",
     "price": 99.99,
     "image": "/smart_devices/smart_speaker.png",
-    "description": "Open and close your garage with this smart garage opener."
+    "description": "Open and close your garage with this smart garage opener.",
+    "rating": 2.5
   }
 ]
