@@ -44,31 +44,37 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        {/* Other Routes */}
-        <Route
-          path="/"
-          element={
-            <div className="content">
-              <ProductCounter
-                count={displayedProducts.length}
-                total={totalProducts}
-              />
-              <Filter
-                onFilterChange={(filterType, value) => {
-                  setFilterOptions((prevFilterOptions) => ({
-                    ...prevFilterOptions,
-                    [filterType]: value,
-                  }));
-                }}
-              />
-              <Sort onSortChange={setSortOption} />
-              <ProductGrid products={displayedProducts} />
-              <LoadMore onLoadMore={handleLoadMore} />
-            </div>
-          }
-        />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path="/smart-speakers" element={<SmartSpeakers />} />
+          <Route path="/smart-lighting" element={<SmartLighting />} />
+          <Route path="/smart-appliances" element={<SmartAppliances />} />
+          <Route path="/home-security" element={<HomeSecurity />} />
+          <Route path="/home-automation" element={<HomeAutomation />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <ProductCounter
+                  count={displayedProducts.length}
+                  total={totalProducts}
+                />
+                <Filter
+                  onFilterChange={(filterType, value) => {
+                    setFilterOptions((prevFilterOptions) => ({
+                      ...prevFilterOptions,
+                      [filterType]: value,
+                    }));
+                  }}
+                />
+                <Sort onSortChange={setSortOption} />
+                <ProductGrid products={displayedProducts} />
+                <LoadMore onLoadMore={handleLoadMore} />
+              </>
+            }
+          />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
