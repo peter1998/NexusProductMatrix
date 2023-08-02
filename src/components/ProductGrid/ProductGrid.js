@@ -1,8 +1,15 @@
 import React from "react";
+import ProductTile from "../ProductTile/ProductTile";
 import "./productGrid.css";
 
-function ProductGrid() {
-  return <div className="product-grid">This is the product grid.</div>;
+function ProductGrid({ products }) {
+  return (
+    <div className="product-grid">
+      {products.map((product) => (
+        <ProductTile key={product.id} product={product} />
+      ))}
+    </div>
+  );
 }
 
 export default ProductGrid;

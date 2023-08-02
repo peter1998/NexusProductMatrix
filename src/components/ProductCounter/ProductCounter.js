@@ -1,9 +1,11 @@
 import React from "react";
 import "./productCounter.css";
 
-function ProductCounter() {
+function ProductCounter({ count, total }) {
   return (
-    <div className="product-counter">Showing 1 - 20 out of 100 products</div>
+    <div className="product-counter">
+      Showing {count} out of {total} products
+    </div>
   );
 }
 

@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Smart Speaker",
+    "category": "Smart Speakers",
+    "price": 49.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "A top-of-the-line smart speaker with exceptional sound quality."
+  },
+  {
+    "id": 2,
+    "name": "Smart Bulb",
+    "category": "Smart Lighting",
+    "price": 29.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Light up your home with this energy-efficient smart bulb."
+  },
+  {
+    "id": 3,
+    "name": "Smart Fridge",
+    "category": "Smart Appliances",
+    "price": 999.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "A fridge that knows your eating habits and restocks itself."
+  },
+  {
+    "id": 4,
+    "name": "Smart Door Lock",
+    "category": "Home Security",
+    "price": 199.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "A secure and easy-to-use smart lock for your home."
+  },
+  {
+    "id": 5,
+    "name": "Smart Thermostat",
+    "category": "Home Automation",
+    "price": 249.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Regulate your home's temperature with this smart thermostat."
+  },
+  {
+    "id": 6,
+    "name": "Smart TV",
+    "category": "Smart Appliances",
+    "price": 899.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Experience the best of entertainment with this smart TV."
+  },
+  {
+    "id": 7,
+    "name": "Smart Vacuum Cleaner",
+    "category": "Home Automation",
+    "price": 349.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Keep your home clean with this self-operating smart vacuum cleaner."
+  },
+  {
+    "id": 8,
+    "name": "Smart Doorbell",
+    "category": "Home Security",
+    "price": 199.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Secure your home with this smart doorbell featuring live video streaming."
+  },
+  {
+    "id": 9,
+    "name": "Smart Light Switch",
+    "category": "Smart Lighting",
+    "price": 59.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Control your home lighting with a simple voice command using this smart switch."
+  },
+  {
+    "id": 10,
+    "name": "Smart Assistant",
+    "category": "Smart Speakers",
+    "price": 79.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Your personal assistant to control all smart devices with voice commands."
+  },
+  {
+    "id": 11,
+    "name": "Smart Security Camera",
+    "category": "Home Security",
+    "price": 199.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Keep an eye on your home with this smart security camera."
+  },
+  {
+    "id": 12,
+    "name": "Smart Plug",
+    "category": "Home Automation",
+    "price": 29.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Control your appliances with this smart plug."
+  },
+  {
+    "id": 13,
+    "name": "Smart Blinds",
+    "category": "Smart Appliances",
+    "price": 199.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Control the light in your home with these smart blinds."
+  },
+  {
+    "id": 14,
+    "name": "Smart Light Strip",
+    "category": "Smart Lighting",
+    "price": 59.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Decorate your home with this colorful smart light strip."
+  },
+  {
+    "id": 15,
+    "name": "Smart Hub",
+    "category": "Smart Speakers",
+    "price": 99.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Control all your smart devices from one place with this smart hub."
+  },
+  {
+    "id": 16,
+    "name": "Smart Alarm System",
+    "category": "Home Security",
+    "price": 299.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Secure your home with this comprehensive smart alarm system."
+  },
+  {
+    "id": 17,
+    "name": "Smart Air Purifier",
+    "category": "Smart Appliances",
+    "price": 199.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Purify the air in your home with this smart air purifier."
+  },
+  {
+    "id": 18,
+    "name": "Smart Dimmer Switch",
+    "category": "Smart Lighting",
+    "price": 69.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Adjust your home lighting with this smart dimmer switch."
+  },
+  {
+    "id": 19,
+    "name": "Smart Home Theater",
+    "category": "Smart Speakers",
+    "price": 799.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Enjoy movies and music with this smart home theater system."
+  },
+  {
+    "id": 20,
+    "name": "Smart Garage Opener",
+    "category": "Home Automation",
+    "price": 99.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Open and close your garage with this smart garage opener."
+  }
+]

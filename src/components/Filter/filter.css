@@ -1,5 +1,16 @@
+/* src/components/Filter/filter.css */
+
 .filter {
   margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.filter .form-group {
+  margin-bottom: 15px;
+}
+
+.filter .form-select {
+  width: 100%;
 }

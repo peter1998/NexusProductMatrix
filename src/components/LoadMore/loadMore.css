@@ -1,8 +1,20 @@
+/* src/components/LoadMore/loadMore.css */
+
 .load-more {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  padding: 20px 0; /* Add some vertical padding */
+}
+
+.load-more .btn {
+  font-size: 18px; /* Increase font size */
+  padding: 10px 30px; /* Increase padding to make the button larger */
+  background-color: #007bff; /* Change the background color */
+  border-color: #0056b3; /* Change the border color */
+  color: #fff; /* Change the text color */
+}
+
+.load-more .btn:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+  border-color: #004085; /* Change the border color on hover */
 }
