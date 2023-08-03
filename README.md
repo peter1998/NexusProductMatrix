@@ -1,6 +1,46 @@
-# Getting Started with Create React App
+# Product Listing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a product listing page built with React.js. It's a Single Page Application that allows users to view a list of smart home products, add them to a cart, and remove them from the cart.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Running the app](#running-the-app)
+- [Running the tests](#running-the-tests)
+- [Building the app for production](#building-the-app-for-production)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [Challenges and Summary](#challenges-and-summary)
+
+## Features
+
+- **Product Listing**: The app fetches product data from a local JSON file and displays them in a grid layout. Each product has an image, name, description, price, and rating.
+- **Product Sorting**: Users can sort the products by their name (in ascending or descending order) or price (in ascending or descending order).
+- **Product Filtering**: Users can filter the products by category and price.
+- **Add to Cart**: Users can add products to a cart. When a product is added to the cart, the app provides visual feedback by changing the color of the "Add to Cart" button and displaying a message.
+- **Remove from Cart**: Users can remove products from the cart. The app asks for confirmation before removing a product.
+- **Cart Summary**: The app shows the number of products in the cart and the total price of the products.
+
+## Technologies Used
+
+- [React.js](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [React Router](https://reactrouter.com/): A collection of navigational components for React apps.
+- [React Bootstrap](https://react-bootstrap.github.io/): Bootstrap components built with React.
+- [React Icons](https://react-icons.github.io/react-icons/): Icon library for React.
+- [React Star Ratings](https://www.npmjs.com/package/react-star-ratings): A customizable React star ratings component.
+- [UUID](https://www.npmjs.com/package/uuid): For creating unique ids.
+- [Create React App](https://create-react-app.dev/): A tool to set up a modern web app by running one command.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/peter1998/NexusProductMatrix.git`.
+2. Navigate into the project directory: `cd product-listing-page`.
+3. Install the dependencies: `npm install`.
+4. Start the application: `npm start`.
 
 ## Available Scripts
 
@@ -27,44 +67,35 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+The project can be deployed using any static site hosting service such as Netlify or Vercel. Here is a guide on how to deploy a React application on Netlify:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Run `npm run build` to create a production build of your application.
+2. Create a new site in Netlify and link it to your GitHub repository.
+3. Set the publish directory to `build` (or the directory specified in your `package.json` if different).
+4. Deploy your site.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+We welcome contributions to this project. To contribute:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes and commit them with a useful message.
+4. Push your branch to your fork.
+5. Create a pull request from your fork to the main repository.
 
-## Learn More
+## Challenges and Summary
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The primary challenge in this project was managing the state of the application, especially the cart state and the state for each product tile. The React Context API was used to manage the global cart state, while the local state was used for each product tile.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Each product tile has two primary states: the default state and the "added to cart" state. When a product is added to the cart, its state changes to "added to cart", the "Add to Cart" button changes color, and a message is displayed. After 3 seconds, the state reverts to the default state. The setTimeout function was used to achieve this.
 
-### Code Splitting
+The cart functionality was implemented using the Context API. The cart state is an array of products. When a product is added to the cart, it's added to the array. When a product is removed, it's removed from the array. The total price of the products in the cart is computed by reducing the cart array.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The sorting and filtering functionalities were implemented using JavaScript's sort and filter functions. The filter and sort options are stored in the state and used to sort and filter the products array before rendering.
 
-### Analyzing the Bundle Size
+The project was styled using CSS and Bootstrap. The CSS transition property was used to create the hover effect for the product tiles and the color change effect for the "Add to Cart" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overall, this project provided a great opportunity to practice using React.js, managing state, working with arrays, and creating user-friendly interfaces. The experience has been insightful and rewarding, leading to a deeper understanding of React.js and its ecosystem. The application built serves as a solid foundation for further enhancements and features.
