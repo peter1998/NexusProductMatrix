@@ -50,3 +50,8 @@
 .product-tile button:hover {
   background-color: #0056b3;
 }
+
+.product-tile .added-to-cart {
+  background-color: green;
+  color: white;
+}

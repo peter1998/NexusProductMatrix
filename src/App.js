@@ -30,7 +30,12 @@ function App() {
     setLimit(limit + 4);
   };
 
-  const totalProducts = products.length;
+  const totalProducts =
+    filterOptions.category === "all"
+      ? products.length
+      : products.filter(
+          (product) => product.category === filterOptions.category
+        ).length;
 
   const displayedProducts = products
     .filter(

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Container, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom"; // Import Link
 import { CartContext } from "../../context/cartContext";
 import StarRatings from "react-star-ratings";
 import "./cart.css";
@@ -20,6 +21,22 @@ function Cart() {
   const totalPrice = cart
     .reduce((total, product) => total + product.price, 0)
     .toFixed(2);
+
+  if (cart.length === 0) {
+    return (
+      <Container>
+        <div className="cart-empty">
+          <h2>Your Cart is Empty</h2>
+          <p>Pick one of our smart products to get started!</p>
+          <Link to="/">
+            {" "}
+            {/* Link to the products page */}
+            <Button variant="primary">Browse Products</Button>
+          </Link>
+        </div>
+      </Container>
+    );
+  }
 
   return (
     <Container>

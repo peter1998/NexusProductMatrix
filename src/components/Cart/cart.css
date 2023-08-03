@@ -6,8 +6,18 @@
   background: #f8f9fa;
 }
 
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f8f9fa;
+}
+
 .cart h2,
-.cart h3 {
+.cart h3,
+.cart-empty h2,
+.cart-empty p {
   margin-bottom: 20px;
 }
 
@@ -33,4 +43,13 @@
 
 .cart-card button:hover {
   background-color: #dc3545;
+}
+
+.cart-empty button {
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-empty button:hover {
+  background-color: #007bff;
 }
