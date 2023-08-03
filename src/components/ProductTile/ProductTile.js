@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../context/cartContext";
 import StarRatings from "react-star-ratings";
+import { v4 as uuidv4 } from "uuid";
 import "./productTile.css";
 
 function ProductTile({ product }) {
@@ -8,10 +9,10 @@ function ProductTile({ product }) {
   const [addedToCart, setAddedToCart] = useState(false);
 
   const addToCart = () => {
-    setCart((currentCart) => [...currentCart, product]);
+    const productWithUUID = { ...product, uuid: uuidv4() };
+    setCart((currentCart) => [...currentCart, productWithUUID]);
     setAddedToCart(true);
 
-    // After 3 seconds, set addedToCart back to false
     setTimeout(() => {
       setAddedToCart(false);
     }, 3000);

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Container, Card, Button } from "react-bootstrap";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom";
 import { CartContext } from "../../context/cartContext";
 import StarRatings from "react-star-ratings";
 import "./cart.css";
@@ -14,7 +14,7 @@ function Cart() {
         "Are you sure you want to remove this item from your cart?"
       )
     ) {
-      setCart(cart.filter((product) => product.id !== productToRemove.id));
+      setCart(cart.filter((product) => product.uuid !== productToRemove.uuid));
     }
   };
 
@@ -29,8 +29,6 @@ function Cart() {
           <h2>Your Cart is Empty</h2>
           <p>Pick one of our smart products to get started!</p>
           <Link to="/">
-            {" "}
-            {/* Link to the products page */}
             <Button variant="primary">Browse Products</Button>
           </Link>
         </div>
@@ -43,7 +41,7 @@ function Cart() {
       <div className="cart">
         <h2>My Cart</h2>
         {cart.map((product) => (
-          <Card className="cart-card" key={product.id}>
+          <Card className="cart-card" key={product.uuid}>
             <Card.Img variant="top" src={product.image} />
             <Card.Body>
               <Card.Title>{product.name}</Card.Title>
