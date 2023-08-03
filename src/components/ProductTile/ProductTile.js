@@ -24,7 +24,8 @@ function ProductTile({ product }) {
 
   return (
     <div className="product-tile">
-      <img src={product.image} alt={product.name} />
+      <img src={process.env.PUBLIC_URL + product.image} alt={product.name} />
+
       <h2>{product.name}</h2>
       <p>{product.description}</p>
       <p>
