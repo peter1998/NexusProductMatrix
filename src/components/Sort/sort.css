@@ -1,3 +1,31 @@
-.sort {
+.sort-container {
+  perspective: 1000px;
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sort {
+  margin: 0;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+  width: fit-content;
+  border: 1px solid #d0d0d0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sort:hover {
+  transform: rotateY(10deg) rotateX(5deg);
+}
+
+.sort select {
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #d0d0d0;
+}
+
+.sort select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

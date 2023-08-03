@@ -11,3 +11,16 @@
 .footer {
   flex-shrink: 0;
 }
+
+.filter-sort-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-sort-container > :first-child {
+  flex: 2;
+}
+
+.filter-sort-container > :last-child {
+  flex: 1;
+}

@@ -39,7 +39,20 @@ function App() {
           product.category === filterOptions.category) &&
         product.price <= filterOptions.price
     )
-    .sort(/* sort logic */)
+    .sort((a, b) => {
+      switch (sortOption) {
+        case "name-asc":
+          return a.name.localeCompare(b.name);
+        case "name-desc":
+          return b.name.localeCompare(a.name);
+        case "price-asc":
+          return a.price - b.price;
+        case "price-desc":
+          return b.price - a.price;
+        default:
+          return 0;
+      }
+    })
     .slice(0, limit);
 
   return (
@@ -61,15 +74,18 @@ function App() {
                   count={displayedProducts.length}
                   total={totalProducts}
                 />
-                <Filter
-                  onFilterChange={(filterType, value) => {
-                    setFilterOptions((prevFilterOptions) => ({
-                      ...prevFilterOptions,
-                      [filterType]: value,
-                    }));
-                  }}
-                />
-                <Sort onSortChange={setSortOption} />
+                <div className="filter-sort-container">
+                  <Filter
+                    onFilterChange={(filterType, value) => {
+                      setFilterOptions((prevFilterOptions) => ({
+                        ...prevFilterOptions,
+                        [filterType]: value,
+                      }));
+                    }}
+                  />
+                  <Sort onSortChange={setSortOption} />
+                </div>
+
                 <ProductGrid products={displayedProducts} />
                 <LoadMore onLoadMore={handleLoadMore} />
               </>
