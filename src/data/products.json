@@ -49,7 +49,7 @@
     "name": "Smart TV",
     "category": "Smart Appliances",
     "price": 899.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/smart_refrigerator.jpg",
     "description": "Experience the best of entertainment with this smart TV.",
     "rating": 4.5
   },
@@ -58,7 +58,7 @@
     "name": "Smart Vacuum Cleaner",
     "category": "Home Automation",
     "price": 349.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/home_automation.jpg",
     "description": "Keep your home clean with this self-operating smart vacuum cleaner.",
     "rating": 4.3
   },
@@ -67,7 +67,7 @@
     "name": "Smart Doorbell",
     "category": "Home Security",
     "price": 199.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/home_security.png",
     "description": "Secure your home with this smart doorbell featuring live video streaming.",
     "rating": 3.8
   },
@@ -76,7 +76,7 @@
     "name": "Smart Light Switch",
     "category": "Smart Lighting",
     "price": 59.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/smart-lighting.png",
     "description": "Control your home lighting with a simple voice command using this smart switch.",
     "rating": 2.3
   },
@@ -94,7 +94,7 @@
     "name": "Smart Security Camera",
     "category": "Home Security",
     "price": 199.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/home_security.png",
     "description": "Keep an eye on your home with this smart security camera.",
     "rating": 3.5
   },
@@ -103,7 +103,7 @@
     "name": "Smart Plug",
     "category": "Home Automation",
     "price": 29.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/home_automation.jpg",
     "description": "Control your appliances with this smart plug.",
     "rating": 2.2
   },
@@ -112,7 +112,7 @@
     "name": "Smart Blinds",
     "category": "Smart Appliances",
     "price": 199.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/smart_refrigerator.jpg",
     "description": "Control the light in your home with these smart blinds.",
     "rating": 4.0
   },
@@ -121,7 +121,7 @@
     "name": "Smart Light Strip",
     "category": "Smart Lighting",
     "price": 59.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/smart-lighting.png",
     "description": "Decorate your home with this colorful smart light strip.",
     "rating": 2.2
   },
@@ -139,7 +139,7 @@
     "name": "Smart Alarm System",
     "category": "Home Security",
     "price": 299.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/home_security.png",
     "description": "Secure your home with this comprehensive smart alarm system.",
     "rating": 4.3
   },
@@ -148,7 +148,7 @@
     "name": "Smart Air Purifier",
     "category": "Smart Appliances",
     "price": 199.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/smart_refrigerator.jpg",
     "description": "Purify the air in your home with this smart air purifier.",
     "rating": 3.8
   },
@@ -157,7 +157,7 @@
     "name": "Smart Dimmer Switch",
     "category": "Smart Lighting",
     "price": 69.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/smart-lighting.png",
     "description": "Adjust your home lighting with this smart dimmer switch.",
     "rating": 2.5
   },
@@ -175,8 +175,278 @@
     "name": "Smart Garage Opener",
     "category": "Home Automation",
     "price": 99.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/home_automation.jpg",
     "description": "Open and close your garage with this smart garage opener.",
     "rating": 2.5
+  },
+  {
+    "id": 21,
+    "name": "Smart Projector",
+    "category": "Smart Speakers",
+    "price": 499.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Project your favorite shows with this smart projector.",
+    "rating": 4.2
+  },
+  {
+    "id": 22,
+    "name": "Smart Chandelier",
+    "category": "Smart Lighting",
+    "price": 199.99,
+    "image": "/smart_devices/smart-lighting.png",
+    "description": "Illuminate your home with this elegant smart chandelier.",
+    "rating": 4.4
+  },
+  {
+    "id": 23,
+    "name": "Smart Washing Machine",
+    "category": "Smart Appliances",
+    "price": 699.99,
+    "image": "/smart_devices/smart_refrigerator.jpg",
+    "description": "Wash your clothes with this efficient smart washing machine.",
+    "rating": 4.5
+  },
+  {
+    "id": 24,
+    "name": "Smart Surveillance System",
+    "category": "Home Security",
+    "price": 399.99,
+    "image": "/smart_devices/home_security.png",
+    "description": "Monitor your property with this comprehensive smart surveillance system.",
+    "rating": 4.3
+  },
+  {
+    "id": 25,
+    "name": "Smart Lawn Mower",
+    "category": "Home Automation",
+    "price": 899.99,
+    "image": "/smart_devices/home_automation.jpg",
+    "description": "Mow your lawn with this autonomous smart lawn mower.",
+    "rating": 4.1
+  },
+  {
+    "id": 26,
+    "name": "Smart Earbuds",
+    "category": "Smart Speakers",
+    "price": 149.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Listen to music with these wireless smart earbuds.",
+    "rating": 4.6
+  },
+  {
+    "id": 27,
+    "name": "Smart Desk Lamp",
+    "category": "Smart Lighting",
+    "price": 49.99,
+    "image": "/smart_devices/smart-lighting.png",
+    "description": "Illuminate your workspace with this smart desk lamp.",
+    "rating": 4.4
+  },
+  {
+    "id": 28,
+    "name": "Smart Cooker",
+    "category": "Smart Appliances",
+    "price": 199.99,
+    "image": "/smart_devices/smart_refrigerator.jpg",
+    "description": "Cook meals effortlessly with this smart cooker.",
+    "rating": 4.7
+  },
+  {
+    "id": 29,
+    "name": "Smart Motion Detector",
+    "category": "Home Security",
+    "price": 59.99,
+    "image": "/smart_devices/home_security.png",
+    "description": "Detect movement in your home with this smart motion detector.",
+    "rating": 4.0
+  },
+  {
+    "id": 30,
+    "name": "Smart Water Controller",
+    "category": "Home Automation",
+    "price": 79.99,
+    "image": "/smart_devices/home_automation.jpg",
+    "description": "Control your home's water supply with this smart water controller.",
+    "rating": 3.9
+  },
+  {
+    "id": 31,
+    "name": "Smart Soundbar",
+    "category": "Smart Speakers",
+    "price": 299.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Enhance your audio experience with this smart soundbar.",
+    "rating": 4.5
+  },
+  {
+    "id": 32,
+    "name": "Smart LED Strip",
+    "category": "Smart Lighting",
+    "price": 29.99,
+    "image": "/smart_devices/smart-lighting.png",
+    "description": "Create ambient lighting with this smart LED strip.",
+    "rating": 4.2
+  },
+  {
+    "id": 33,
+    "name": "Smart Dishwasher",
+    "category": "Smart Appliances",
+    "price": 799.99,
+    "image": "/smart_devices/smart_refrigerator.jpg",
+    "description": "Wash your dishes with ease using this smart dishwasher.",
+    "rating": 4.6
+  },
+  {
+    "id": 34,
+    "name": "Smart Panic Button",
+    "category": "Home Security",
+    "price": 49.99,
+    "image": "/smart_devices/home_security.png",
+    "description": "Ensure safety with this smart panic button.",
+    "rating": 4.4
+  },
+  {
+    "id": 35,
+    "name": "Smart Pool Controller",
+    "category": "Home Automation",
+    "price": 199.99,
+    "image": "/smart_devices/home_automation.jpg",
+    "description": "Control your pool's functions with this smart pool controller.",
+    "rating": 4.3
+  },
+  {
+    "id": 36,
+    "name": "Smart Headphones",
+    "category": "Smart Speakers",
+    "price": 199.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Experience immersive sound with these smart headphones.",
+    "rating": 4.7
+  },
+  {
+    "id": 37,
+    "name": "Smart Outdoor Lights",
+    "category": "Smart Lighting",
+    "price": 99.99,
+    "image": "/smart_devices/smart-lighting.png",
+    "description": "Light up your outdoor space with these smart lights.",
+    "rating": 4.5
+  },
+  {
+    "id": 38,
+    "name": "Smart Oven",
+    "category": "Smart Appliances",
+    "price": 699.99,
+    "image": "/smart_devices/smart_refrigerator.jpg",
+    "description": "Bake and roast with precision with this smart oven.",
+    "rating": 4.7
+  },
+  {
+    "id": 39,
+    "name": "Smart Smoke Detector",
+    "category": "Home Security",
+    "price": 49.99,
+    "image": "/smart_devices/home_security.png",
+    "description": "Detect smoke and fire in your home with this smart smoke detector.",
+    "rating": 4.4
+  },
+  {
+    "id": 40,
+    "name": "Smart Irrigation Controller",
+    "category": "Home Automation",
+    "price": 129.99,
+    "image": "/smart_devices/home_automation.jpg",
+    "description": "Manage your garden's irrigation with this smart controller.",
+    "rating": 4.3
+  },
+  {
+    "id": 41,
+    "name": "Smart Microphone",
+    "category": "Smart Speakers",
+    "price": 49.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Record and stream audio with this smart microphone.",
+    "rating": 4.1
+  },
+  {
+    "id": 42,
+    "name": "Smart Desk Light",
+    "category": "Smart Lighting",
+    "price": 39.99,
+    "image": "/smart_devices/smart-lighting.png",
+    "description": "Create the perfect workspace lighting with this smart desk light.",
+    "rating": 4.0
+  },
+  {
+    "id": 43,
+    "name": "Smart Microwave",
+    "category": "Smart Appliances",
+    "price": 299.99,
+    "image": "/smart_devices/smart_refrigerator.jpg",
+    "description": "Cook and heat your food with this smart microwave.",
+    "rating": 4.4
+  },
+  {
+    "id": 44,
+    "name": "Smart Security System",
+    "category": "Home Security",
+    "price": 299.99,
+    "image": "/smart_devices/home_security.png",
+    "description": "Secure your property with this comprehensive smart security system.",
+    "rating": 4.5
+  },
+  {
+    "id": 45,
+    "name": "Smart Energy Monitor",
+    "category": "Home Automation",
+    "price": 99.99,
+    "image": "/smart_devices/home_automation.jpg",
+    "description": "Monitor your home's energy usage with this smart energy monitor.",
+    "rating": 4.2
+  },
+  {
+    "id": 46,
+    "name": "Smart Sound System",
+    "category": "Smart Speakers",
+    "price": 599.99,
+    "image": "/smart_devices/smart_speaker.png",
+    "description": "Enjoy high-quality sound with this smart sound system.",
+    "rating": 4.6
+  },
+  {
+    "id": 47,
+    "name": "Smart Night Light",
+    "category": "Smart Lighting",
+    "price": 19.99,
+    "image": "/smart_devices/smart-lighting.png",
+    "description": "Light up your nights with this smart night light.",
+    "rating": 4.4
+  },
+  {
+    "id": 48,
+    "name": "Smart Coffee Maker",
+    "category": "Smart Appliances",
+    "price": 99.99,
+    "image": "/smart_devices/smart_refrigerator.jpg",
+    "description": "Brew your coffee with this smart coffee maker.",
+    "rating": 4.5
+  },
+  {
+    "id": 49,
+    "name": "Smart CCTV System",
+    "category": "Home Security",
+    "price": 399.99,
+    "image": "/smart_devices/home_security.png",
+    "description": "Monitor your property with this smart CCTV system.",
+    "rating": 4.6
+  },
+  {
+    "id": 50,
+    "name": "Smart Heating System",
+    "category": "Home Automation",
+    "price": 299.99,
+    "image": "/smart_devices/home_automation.jpg",
+    "description": "Control your home's heating with this smart heating system.",
+    "rating": 4.5
   }
 ]
