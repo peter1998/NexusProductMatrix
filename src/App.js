@@ -16,6 +16,7 @@ import HomeAutomation from "./components/HomeAutomation/HomeAutomation";
 import products from "./data/products.json";
 
 import "./App.css";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   const [filterOptions, setFilterOptions] = useState({
@@ -51,6 +52,7 @@ function App() {
           <Route path="/smart-appliances" element={<SmartAppliances />} />
           <Route path="/home-security" element={<HomeSecurity />} />
           <Route path="/home-automation" element={<HomeAutomation />} />
+          <Route path="/cart" element={<Cart />} />
           <Route
             path="/"
             element={

@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { FaArrowRight, FaShoppingCart } from "react-icons/fa";
+import { CartContext } from "../../context/cartContext";
 import logo from "../../assets/logo.png";
-import { FaArrowRight } from "react-icons/fa";
 import "./header.css";
 
 const Header = () => {
+  const [cart] = useContext(CartContext);
+
   return (
     <Navbar variant="light" expand="lg" sticky="top" className="navbar">
       <Container fluid>
@@ -40,6 +43,12 @@ const Header = () => {
             <Nav.Item>
               <Link className="nav-link" to="/home-automation">
                 Home Automation
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link" to="/cart">
+                <FaShoppingCart />
+                <span>({cart.length})</span>
               </Link>
             </Nav.Item>
           </Nav>
