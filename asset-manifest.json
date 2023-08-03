@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NexusProductMatrix/static/css/main.5c8fb0d8.css",
-    "main.js": "/NexusProductMatrix/static/js/main.d5757af0.js",
+    "main.js": "/NexusProductMatrix/static/js/main.8df4b47e.js",
     "static/media/smart_appliances_layout.jpg": "/NexusProductMatrix/static/media/smart_appliances_layout.e64c0fdf0da8f330cdc6.jpg",
     "static/media/smart_speakers_layout.jpg": "/NexusProductMatrix/static/media/smart_speakers_layout.aa19ab9b84c0d315feb2.jpg",
     "static/media/home_security_layout.jpg": "/NexusProductMatrix/static/media/home_security_layout.76426e7aff80981819fa.jpg",
@@ -9,10 +9,10 @@
     "static/media/smart_lighting_layout.jpg": "/NexusProductMatrix/static/media/smart_lighting_layout.d04a8660bca1e483aacd.jpg",
     "index.html": "/NexusProductMatrix/index.html",
     "main.5c8fb0d8.css.map": "/NexusProductMatrix/static/css/main.5c8fb0d8.css.map",
-    "main.d5757af0.js.map": "/NexusProductMatrix/static/js/main.d5757af0.js.map"
+    "main.8df4b47e.js.map": "/NexusProductMatrix/static/js/main.8df4b47e.js.map"
   },
   "entrypoints": [
     "static/css/main.5c8fb0d8.css",
-    "static/js/main.d5757af0.js"
+    "static/js/main.8df4b47e.js"
   ]
 }
