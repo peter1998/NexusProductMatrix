@@ -13,7 +13,7 @@
     "name": "Smart Bulb",
     "category": "Smart Lighting",
     "price": 29.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/smart-lighting.png",
     "description": "Light up your home with this energy-efficient smart bulb.",
     "rating": 1.5
   },
@@ -22,7 +22,7 @@
     "name": "Smart Fridge",
     "category": "Smart Appliances",
     "price": 999.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/smart_refrigerator.jpg",
     "description": "A fridge that knows your eating habits and restocks itself.",
     "rating": 4.8
   },
@@ -31,7 +31,7 @@
     "name": "Smart Door Lock",
     "category": "Home Security",
     "price": 199.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/home_security.png",
     "description": "A secure and easy-to-use smart lock for your home.",
     "rating": 3.9
   },
@@ -40,7 +40,7 @@
     "name": "Smart Thermostat",
     "category": "Home Automation",
     "price": 249.99,
-    "image": "/smart_devices/smart_speaker.png",
+    "image": "/smart_devices/home_automation.jpg",
     "description": "Regulate your home's temperature with this smart thermostat.",
     "rating": 4.1
   },
