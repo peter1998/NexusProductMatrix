@@ -3,15 +3,22 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background: #f8f9fa;
 }
 
-.cart h2 {
+.cart h2,
+.cart h3 {
   margin-bottom: 20px;
 }
 
 .cart-card {
-  width: 80%;
+  width: 30%;
   margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cart-card:hover {
+  transform: scale(1.02);
 }
 
 .cart-card img {
@@ -21,4 +28,9 @@
 
 .cart-card button {
   width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.cart-card button:hover {
+  background-color: #dc3545;
 }
