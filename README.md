@@ -69,12 +69,7 @@ Your app is ready to be deployed!
 
 ## Deployment
 
-The project can be deployed using any static site hosting service such as Netlify or Vercel. Here is a guide on how to deploy a React application on Netlify:
-
-1. Run `npm run build` to create a production build of your application.
-2. Create a new site in Netlify and link it to your GitHub repository.
-3. Set the publish directory to `build` (or the directory specified in your `package.json` if different).
-4. Deploy your site.
+You can view the live demo of the application [NexusProductMatrix](https://peter1998.github.io/NexusProductMatrix/).
 
 ## Contributing
 
@@ -95,6 +90,8 @@ Each product tile has two primary states: the default state and the "added to ca
 The cart functionality was implemented using the Context API. The cart state is an array of products. When a product is added to the cart, it's added to the array. When a product is removed, it's removed from the array. The total price of the products in the cart is computed by reducing the cart array.
 
 The sorting and filtering functionalities were implemented using JavaScript's sort and filter functions. The filter and sort options are stored in the state and used to sort and filter the products array before rendering.
+
+An additional challenge was faced during deployment. The images were not visible on the GitHub Pages hosted site. This was because the path to the images was not correctly resolved in the production build. The issue was fixed by prefixing the image paths with `process.env.PUBLIC_URL`, which points to the public folder in the production build.
 
 The project was styled using CSS and Bootstrap. The CSS transition property was used to create the hover effect for the product tiles and the color change effect for the "Add to Cart" button.
 
