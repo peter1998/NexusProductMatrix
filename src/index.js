@@ -6,9 +6,12 @@ import { CartProvider } from "./context/cartContext";
 import App from "./App";
 import "./index.css";
 
+const basename =
+  process.env.NODE_ENV === "development" ? "/" : "/NexusProductMatrix";
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <CartProvider>
         <App />
       </CartProvider>

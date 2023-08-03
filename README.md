@@ -99,3 +99,5 @@ The sorting and filtering functionalities were implemented using JavaScript's so
 The project was styled using CSS and Bootstrap. The CSS transition property was used to create the hover effect for the product tiles and the color change effect for the "Add to Cart" button.
 
 Overall, this project provided a great opportunity to practice using React.js, managing state, working with arrays, and creating user-friendly interfaces. The experience has been insightful and rewarding, leading to a deeper understanding of React.js and its ecosystem. The application built serves as a solid foundation for further enhancements and features.
+
+One challenge that came up during deployment was the routing behavior of the application. Initially, the app worked perfectly in the local environment but broke when deployed because the routes in the deployed version were different from the local ones due to the extra repository name in the URL. This issue was resolved by conditionally setting the `basename` of the `BrowserRouter` depending on the environment. This way, the app could correctly determine the routes in both local and deployed environments.
